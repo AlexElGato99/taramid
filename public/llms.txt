@@ -1,0 +1,69 @@
+# {{ config('settings.site_name', 'IPTV Service') }}
+
+> {{ config('settings.site_about', 'Premium IPTV streaming service offering live TV channels, movies, series, and sports from around the world.') }}
+
+## About
+
+{{ config('settings.site_name', 'IPTV Service') }} is a premium IPTV streaming platform that provides access to thousands of live TV channels, movies, TV series, and sports events from every corner of the world. We offer high-quality streaming with support for multiple devices and competitive pricing plans.
+
+## Services
+
+- **Live TV Channels**: Thousands of channels from countries worldwide including entertainment, news, sports, kids, documentary, music, and more
+- **Video on Demand (VOD)**: Extensive library of movies and TV series updated regularly
+- **Sports Streaming**: Live sports events including football, basketball, tennis, MMA, boxing, and more
+- **Multi-Device Support**: Compatible with Smart TVs, Android, iOS, Windows, Mac, Firestick, MAG boxes, and more
+- **EPG (Electronic Program Guide)**: Full TV guide for easy channel navigation
+- **HD & 4K Quality**: High-definition and ultra-high-definition streaming quality
+- **Anti-Freeze Technology**: Stable and reliable streaming with minimal buffering
+
+## Key Pages
+
+- Homepage: /
+- Pricing & Plans: /pricing
+- Channel List: /channels
+- Supported Devices: /devices
+- FAQ: /faq
+- Setup Tutorials: /tutorials
+- Free Trial: /trial
+- Blog: /blog
+- Contact Us: /contact-us
+
+## Pricing
+
+We offer flexible subscription plans to suit every budget. Plans include options for different connection counts and durations. All plans include full access to live channels, VOD content, sports, and EPG guide. Visit our pricing page for current rates and special offers.
+
+## Device Compatibility
+
+Our service works on a wide range of devices:
+- Smart TVs (Samsung, LG, Sony, etc.)
+- Android devices (phones, tablets, TV boxes)
+- iOS devices (iPhone, iPad)
+- Amazon Firestick & Fire TV
+- Windows & Mac computers
+- MAG boxes
+- Formuler devices
+- Enigma2/Dreambox
+- VLC Media Player
+- Any IPTV-compatible player
+
+## Free Trial
+
+We offer a free trial so you can test our service before committing to a subscription. Visit /trial to request your free trial.
+
+## Support
+
+- Setup tutorials available at /tutorials with step-by-step guides for all devices
+- FAQ section at /faq covering common questions
+- Contact form at /contact-us for direct support
+- Multiple contact channels including email, WhatsApp, Telegram, and social media
+
+## Why Choose Us
+
+- Extensive channel lineup from 100+ countries
+- Reliable HD and 4K streaming quality
+- 24/7 customer support
+- Affordable pricing with flexible plans
+- Multi-device compatibility
+- Regular content updates
+- Easy setup with detailed tutorials
+- Free trial available

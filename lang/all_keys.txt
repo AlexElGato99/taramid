@@ -1,0 +1,885 @@
+﻿":tag" containing the tag
+:age years old
+:number Episode
+:number Season
+:time min
+:total comment
+:total comments
+:total movie & tv show
+:view view
++1234567890
+100% secure transactions
+1234567890
+24/7 Available
+24/7 Support
+30-day guarantee
+A new verification link has been sent to the email address you provided during registration.
+About
+Accepted formats: JPG, PNG, PDF (Max 5MB)
+Access channels from every continent with diverse programming in multiple languages.
+Access live sports, news, movies, series and more. Never miss your favorite shows again.
+Account Name
+Account Name:
+Account Number
+Account Number:
+Account type
+Acting
+Actions
+Active
+Activity
+Add a new plan to
+Add a new slide to the homepage hero section
+Add and manage setup steps
+Add Blog
+Add Device Tab
+Add FAQ
+Add Feature
+Add features that customers will get with this plan
+Add M3U URL to Player
+Add new
+Add New FAQ
+Add New Feature
+Add New Images
+Add New Slide
+Add New Step
+Add Plan
+Add Step
+Add tag
+Add the service account email to your Google Analytics property with Viewer permissions
+Add Tutorial
+Add watchlist
+Add Your First Slide
+Address
+Admin
+Admin panel language
+Advanced
+Advertisement Code
+After subscribing, you can find your personal M3U playlist URL in your account settings. This URL contains all your channels.
+All
+All caught up!
+All Methods
+All Statuses
+Alternative title
+Alternative title is used for the translation of the content into your language.
+Always here to help you
+Amount
+Analytics Active
+Analytics Not Configured
+Answer
+Apply
+Are you sure you want to delete this FAQ?
+Are you sure you want to delete this feature?
+Are you sure you want to delete this notification?
+Are you sure you want to delete this order?
+Are you sure you want to delete this slide?
+Are you sure you want to delete this tutorial?
+Are you sure?
+Are you sure? This will delete all plans in this tab.
+Author
+Author:
+Back
+Back to all blogs
+Back to Homepage
+Back to List
+Back to Orders
+Background Image
+Bank Name
+Bank Name:
+Bank Transfer
+Bank Transfer Instructions
+Billing
+Billing information
+Biography
+Birth Place
+birthday
+Blog
+Blog Page
+Blogs
+Blue to Purple
+Bounce Rate
+Brief description for search engines (155 characters recommended)
+Brief description for this slide
+Browse Channels
+Browser tab title (site name will be added automatically)
+Browser tab title for blog listing page
+Browser tab title for contact page
+Browser tab title for FAQ page
+Browser tab title for pricing page
+Browser tab title for tutorial page
+Bulk add
+Buy Now
+By browsing this website, you accept our :cookie.
+By continuing, you agree with the :terms
+Calendar
+Can\
+Cancel
+Cancel subscription
+Cancelled
+Cast
+Change password
+channels
+Channels from Every Corner of the World Section
+Channels Page
+Channels Page Settings
+Check FAQ
+Checkout
+Checkout Settings
+Checkout Type
+Choose
+Choose a subscription plan that fits your needs from our pricing page. After payment, you will receive your credentials via email.
+Choose and install an IPTV player application on your device. Here are our recommended players:
+Choose cover file
+Choose the plan that suits you and get started
+Choose Your Perfect Plan
+City
+Classic
+Clear all
+Click "Add Step" to create your first tutorial step
+Click to copy full reference
+Click to upload
+Click to upload or drag
+Client ID
+Closed comment
+Code
+Collections
+Color
+Comment
+Complete
+Complete Your Order
+Complete Your Subscription
+Completed
+Config
+Configure Google Analytics to track visitor data and insights
+Configure page titles and descriptions for better search engine visibility. Titles automatically include your site name suffix.
+Configure the FAQ section heading and manage frequently asked questions.
+Configure the supported devices section that appears below the features cards.
+Configure the world channels section that appears below the supported devices section.
+Confirm
+Confirm Password
+Connected
+Contact
+Contact e-mail address
+Contact Page
+Contact Support
+Content
+Content Tips
+Control the heading and description for the "Why Choose Us" section
+Cookie Policy
+Cookie policy URL
+Cookies Policy
+Copied
+Copied to clipboard
+Country
+Coupon
+Coupon code
+Cover
+Create a new device category for pricing plans
+Create a new project or select existing one
+Create a new tutorial tab (e.g., Android, iOS, Windows)
+Create a Service Account and download JSON key file
+Create an Account
+Create Blog
+Create Device Tab
+Create discussion
+Create First Plan
+Create Hero Slide
+Create multiple profiles for your family members with personalized preferences.
+Create Plan
+Create Pricing Plan
+Create Slide
+Create Tab
+Create Tutorial
+Currency
+Current icon
+Current Image
+Current Images
+Current password
+Current Plan
+Current Video
+Currently set
+Custom code
+Custom Link
+Customer
+Customer Information
+Customer must create an account or log in during checkout for automatic subscription activation.
+Customers will be redirected to PayGate.to (Cards, Apple Pay, Google Pay)
+Customers will be redirected to PayPal payment gateway
+Customers will be redirected to Stripe payment gateway
+Customers will see direct bank transfer instructions
+Database Host
+Database Name
+Database Password
+Database Port
+Database Username
+Date
+Date:
+Death date
+death_date
+Debug Mode
+Default Frontend Language
+Default language shown to first-time visitors
+Delete
+Delete this image?
+Delete this step?
+Description
+Description for blog listing page
+Description for contact page
+Description for FAQ page
+Description for pricing page
+Description for search engine results
+Description for tutorial page
+Devices
+Direct Transfer
+Disable
+Disable user registration
+Discount
+Discount %
+Display Order
+Download
+Download Link
+Download Transfer Proof
+Draft
+Duration
+Duration (Months)
+Duration:
+e.g., /pricing
+e.g., /register
+e.g., 1 Device, 2 Devices, 3 Devices
+e.g., 1 Month, 3 Months, 6 Months
+e.g., 1, 3, 6, 12
+e.g., 123456789
+e.g., 9.99
+e.g., Buy Now
+e.g., Channels from Every Corner of the World
+e.g., Free Trial
+e.g., Frequently Asked Questions
+e.g., Full HD Quality
+e.g., https://...
+e.g., Popular, Best Value, Most Loved, etc.
+e.g., Premium IPTV Subscription
+e.g., Supported Devices
+Each line contains new video link
+Edit
+Edit Device Tab
+Edit Feature
+Edit Hero Slide
+Edit Pricing Plan
+Edit Tutorial
+Email
+Email Address
+Email Customer
+Email Password Reset Link
+Emerald to Teal
+Enable Google Analytics Data API
+Ends at
+Enjoy crystal-clear HD streaming with minimal buffering on all devices.
+Enjoy seamless streaming on your TV, mobile, tablet, and computer. One subscription, unlimited devices.
+Enter a description for the supported devices section...
+Enter a paragraph describing worldwide channel coverage...
+Enter answer...
+Enter phone number with country code (without + or spaces)
+Enter question...
+Enter the full embed URL from Vimeo, YouTube, or any other video platform
+Enter the full URL for external checkout
+Enter the full URL where customers will be redirected
+Enter your details to proceed to secure payment
+Enter your full name
+Entertainment
+Environment
+Episode
+Episode #:number
+Episode Calendar
+Episode Number
+Example message theme : [title] published
+Example:
+Example: https://player.vimeo.com/video/916781453?h=2ef70cf25f
+excl.
+Exclusive
+Exclusive to subscriber
+Existing Features
+Expires
+Facebook
+Failed
+FAQ Page
+FAQs will be added soon. Please check back later.
+Favicon
+Featured
+Featured Channels Logo Slider
+Featured Channels Title
+Featured Image
+Features Settings
+Female
+Fetch data
+File uploaded:
+Filter
+Find answers to common questions about our IPTV service
+Find content that suits your taste
+Find it now
+Find this in Google Analytics: Admin â†’ Property Settings â†’ Property ID
+Flexible pricing for every need. Cancel anytime with full money-back guarantee.
+Follow our step-by-step guides to setup IPTV on your device
+Footer
+For EPG (Electronic Program Guide), use the XMLTV URL provided in your account.
+For iOS & Computer
+For Smart TV & Android
+For video embeds, use the embed URL from video platforms (Vimeo, YouTube, etc.)
+Forbidden
+Forgot Password
+Forgot your password?
+Free trial
+Frequently Asked Questions
+Frequently Asked Questions Section
+Full Name
+Full SEO-optimized title for browser tab (50-60 characters recommended)
+Full SEO-optimized title for browser tab and search results (50-60 characters recommended)
+Gender
+Genre
+Get instant support via WhatsApp
+Get started by creating your first hero slide for the homepage.
+Get started with Google Analytics
+Get your GA4 Property ID from Analytics Admin settings
+Get Your M3U Playlist URL
+Global Coverage
+Go to
+Go to episode
+Go to Homepage
+Go to page :page
+Google Analytics 4 Property ID
+Google Analytics Configuration
+Google Analytics is Active
+Google Analytics is configured and collecting data
+Google Client ID
+Google Client ID (Optional - For OAuth Login)
+Google Client Secret
+Google Client Secret (Optional - For OAuth Login)
+Google with Sign in
+Google with Sign up
+Gradient Background
+Guest Order
+Have a coupon code ?
+HD Quality
+Header
+Heading
+Hello, I need support with my IPTV service.
+Hero Section
+Hide Replies
+Home Page
+Home Page Settings
+Horizontal
+Host
+http://
+https://
+IBAN
+IBAN NUMBER
+IBAN:
+Icon
+Icon Image
+Icons color
+If you have any questions or need assistance with setup, our support team is here to help you 24/7.
+Image
+Image (Optional)
+IMDb
+Imdb ID
+Import
+Import episode
+Import people
+Import season
+Import video
+Import video (vidsrc.me)
+Importer
+Inactive
+incl.
+Included Features:
+Includes
+Inclusive
+Information box
+Instagram
+Install
+Install completed
+Install completed successfully
+Install IPTV Player
+Instant Activation
+Interval
+IPTV Setup Tutorial
+John Doe
+john@example.com
+JPEG, PNG, JPG, GIF, SVG, WEBP - Max 5MB
+Keep it short - max 5 words recommended
+Know for
+Known For
+Label
+Language
+Large
+Last 30 Days
+Last 7 Days
+Last Month\
+Last Year
+Latest Movies
+Latest news, tips and updates
+Latest TV Shows
+Layout
+Learn how to set up and use your IPTV subscription
+Leave empty if you don\
+Leave empty to apply the tax rate on all regions.
+Leave empty to hide badge. Enter custom text like "Popular", "Best Value", etc.
+License Key
+Lifetime Visitors
+Liked on, :date
+Limit
+Link
+Linked to Account
+Listing
+Live broadcast
+Live TV & On-Demand
+Live Visitors
+Loading notifications...
+Log in to comment !
+Log Out
+logo
+Logout
+Lower numbers appear first
+Lower numbers appear first. Use this to control the order of ads on the same page.
+Main site title shown in browser tab and search results
+Male
+Manage all your notifications
+Manage FAQs
+Manage homepage slider images and content
+Manage setup tutorials for different devices
+Mark all as read
+Mark as read
+Member for
+Memory Limit
+Message
+Meta Description
+Meta Description (160 characters max)
+Meta Title
+Method
+min
+min read
+Mode
+Moderator
+Money Back
+Month
+Monthly
+months
+Most liked
+Most Popular
+Movie
+Movie & TV Show Request
+Multi-Device Streaming
+Multilingual Content
+Multi-User Support
+My Orders
+My profile
+Name
+Need Additional Help?
+Need help choosing a plan?
+Need Help?
+Need help? Contact our support
+New Contact Form Submission
+New discussion
+New Icon (Leave empty to keep current)
+New password
+New Sessions
+Newest
+Next
+No Active Subscription
+No blog posts yet. Check back soon!
+No blogs found. Create your first blog post!
+No comments yet!
+No Device Tabs Yet
+No FAQs added yet.
+No FAQs Available
+No features added yet. Add your first feature above!
+No Hero Slides
+No new notifications
+No notifications
+No notifications to show
+No orders found
+No orders yet
+No plans available for this device category.
+No plans created yet for this device tab.
+No steps added yet
+No steps available yet
+No Tutorials Available
+No tutorials found. Create your first tutorial!
+Not Configured
+Not Found
+Note: Subscription cannot be activated automatically for guest orders.
+Notifications
+OFF
+Older
+Once the playlist is loaded, you can browse through all available channels and start watching your favorite content immediately!
+Onesignal Config
+Onesignal Message
+Only needed for Google OAuth login
+Open Google Analytics
+Open your IPTV player app and add your M3U playlist URL. Most apps have an "Add Playlist" or "Add URL" option in their settings.
+Optional
+Optional. If not provided, gradient background will be used. Max 2MB.
+Optional. Upload new image to replace current one. Max 2MB.
+Orange to Red
+Order
+Order (0 = first)
+Order Details
+Order Summary
+orders
+Other Pages
+Our Blog
+Overview
+Page Description
+Page Expired
+Page Heading
+Page Image
+Page Placement
+Page Title
+Page Url
+Page Views
+Pageview
+pagination.next
+pagination.previous
+paid
+Paragraph
+Passive
+Password
+Paste your ad code here (Google AdSense, Banner HTML, etc.)
+Pay
+Payment cancelled
+Payment completed
+Payment completed successfully
+Payment Details
+Payment history
+Payment ID
+Payment Information
+Payment is cancelled
+Payment is currently awaiting approval
+Payment Method
+Payment Method:
+Payment pending
+Payment Required
+Payment Successful!
+Payment Verification Pending
+PayPal
+PayPal Payment Pending
+Pending
+Pending comments
+Pending reports
+People
+Percentage
+Phone
+Phone Number
+Placement
+Plan
+Plan Features
+Plan Name
+Plans
+play
+Please transfer the exact amount to the following bank account:
+Please wait while we redirect you to PayGate.to secure checkout page. Do not close this window.
+PNG, JPG, SVG, WEBP - max 2MB
+PNG, JPG, SVG, WEBP - max 2MB (upload to replace)
+PNG, JPG, WEBP - max 2MB
+Polygon USDC Wallet Address
+Popular Badge Text (Optional)
+Popular Categories Logo Slider
+Popular Categories Title
+Popularity
+Port
+Position (1 = First)
+Postal code
+Premium IPTV Subscription
+Prepaid
+Prev
+Previous
+Price
+Pricing Coming Soon
+Pricing Management
+Pricing Page
+Pricing Section Title
+Pricing/Subscription Page
+Primary Button Text
+Primary Button URL
+Privacy policy URL
+Proceed to Secure Payment
+Property ID
+Provider Mode
+Publish
+Publishable key
+Published
+Published on, :date
+Published:
+Purple to Pink
+Quality
+Quantity
+Question
+Quick Actions
+Read
+Read more
+Recommended For You
+Redirecting to Secure Payment
+Reference
+Reference or Email
+Reference:
+Refunded
+Regions
+Registration
+Related content
+Related Posts
+Release date
+Released
+Remove
+Remove current image
+Replace existing
+Reply
+Report
+Request
+Request closed
+Request is for members only
+Request the movies and series you want to see or watch here, and we\
+Required environment variables
+Resend Verification Email
+Reset Password
+Results
+Runtime
+Save
+Save additions as drafts
+Save change
+Save Changes
+Save Devices Section
+Save FAQ Heading
+Save Featured Slider
+Save Popular Slider
+Save Titles & Status
+Save World Channels Section
+Search
+Season
+Season name
+Season number
+Secondary Button Text
+Secondary Button URL
+Secret
+Secret key
+Section Description
+Section Heading
+Section Image
+Section Settings
+Section Title
+Section Titles
+Secure
+Secure Payment
+Secure payment powered by industry-leading providers
+Secure payment powered by PayGate.to
+Secure Payment via PayGate.to - Your payment information is encrypted and secure.
+Secure SSL Connection
+Select Custom Providers
+Select multiple images (JPEG, PNG, JPG, GIF, SVG, WEBP - Max 2MB each)
+Select Provider
+Send inquiry
+Send Push Notification
+SEO Optimization Guide
+SEO Title (Browser Tab)
+Server Error
+Service Account JSON Key File
+Service Unavailable
+Sessions
+Settings
+Setup Guide
+Setup Instructions
+Setup Tutorials
+Share:
+Show
+Show :total replies
+Show Cookie Policy
+Show featured
+Show filter
+Show less
+Show more
+Show slider
+Show subtitle
+Showing :from - :to of :total
+Sign in
+Sign in to your account
+Sign up
+Signing secret
+Site about
+site about footer
+Site Description
+Site name
+Site Title
+sk_test_...
+Slide
+Slide Title
+Small
+SMTP Encryption
+SMTP Host
+SMTP Password
+SMTP Port
+SMTP Username
+Solved
+Sort
+Sort Order
+Sorting
+Spin the wheel of luck
+Sports & News
+Start by creating your first device tab (e.g., 1 Device, 2 Devices)
+Start Watching
+Start watching immediately
+Status
+Stay tuned, video will be added soon
+Stay updated with live sports events and breaking news from around the world.
+Step Content
+Step Number
+Step Title
+steps
+Still have questions?
+Stream
+Stripe
+Stripe Payment
+Subject
+Submit
+Submit Transfer Proof
+Subscribe
+Subscribe to a Plan
+Subscription
+Subscription end
+Subscription Plan
+Subscription Status
+Subtotal
+Support
+Supported Devices Section
+Supported formats: JPG, PNG, GIF, SVG, WebP. Max size: 4MB
+Supported Payment Methods
+Tab Name
+Tag
+Tag line
+Tags
+Tax
+Taxes
+Terms of service
+Terms of service URL
+Thank you for your order
+Thanks
+Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\
+The debug mode was expected to be `false`, but actually was `true`
+The environment was expected to be `production`, but actually was `development`
+The page will display the video/image along with 6 feature cards
+Theme color
+Themoviedb Api Key
+Themoviedb Config
+Themoviedb ID
+Themoviedb importer
+Themoviedb Language
+Themoviedb People limit
+This is a secure area of the application. Please confirm your password before continuing.
+This Month\
+This order is not linked to a user account. The subscription cannot be activated automatically.
+This will be displayed as a tab on the pricing page
+This will be the tab name (e.g., "Android", "iOS", "Windows")
+Thousands of movies, TV shows, and entertainment channels for the whole family.
+Tip:
+Title
+Today\
+Too Many Requests
+Top this week
+Total
+Total result :total
+Total Sessions
+Total Users
+Trailer
+Transfer Proof
+Transfer Verification Pending
+Try Again
+Try your chance
+Tutorial Page
+Tutorial Steps
+Tutorials
+Tutorials are being prepared. Please check back later.
+TV Show
+Twitter
+Type
+Unauthorized
+United States
+Unread
+Upcoming
+Update Blog
+Update device tab settings
+Update hero slide content and settings
+Update Plan
+Update plan in
+Update Section Settings
+Update Slide
+Update Status
+Update Step
+Update Tab
+Update Tutorial
+Update tutorial information and manage steps
+Upload JSON file
+Upload logos that will continuously scroll from right to left below Featured Channels section.
+Upload logos that will continuously scroll from right to left below Popular Categories section.
+Upload the JSON file and enter Property ID below
+Upload the JSON key file from your Google Cloud Service Account
+Upload Transfer Proof
+Use themoviedb image
+Used Disk Space
+Used when no image is uploaded or as overlay
+User
+User Account
+Username
+Verified
+Vertical
+Video Embed URL
+Video link
+Video Quality
+View
+View all notifications
+View all result
+View Analytics Dashboard
+View Billing
+View Details
+View Plans
+View Pricing Plans
+View tool
+Violet to Indigo
+Visitors
+Vote average
+Watch now
+Watch thousands of channels in HD and 4K quality. Stream your favorite content anytime, anywhere.
+Watch trailer
+Watch your favorite channels anytime, anywhere with unlimited access.
+Watched on, :date
+We are preparing our pricing plans. Please check back later.
+We are verifying your bank transfer. This usually takes 24-48 hours. You will receive an email confirmation once verified.
+We canâ€™t find that page
+We\
+Webhook ID
+What happened?
+WhatsApp
+WhatsApp Number
+WhatsApp Support
+WhatsApp will use the number from General Settings
+Why Choose Us?
+Write a comment
+XXXX-XXXX-XXXX
+Year
+Year to Date
+Yearly
+Yes I want to cancel my subscription
+Yesterday\
+You can display either a video OR an image, or both
+You can reply directly to this email to respond to
+You cancelled the payment process. Your card was not charged, and no transaction was completed.
+You do not have a subscription yet
+You have received a new message from your website contact form.
+You have to subscribe to watch
+Your Account Name
+Your Bank Name
+Your dashboard is now receiving real-time visitor data and analytics from Google Analytics.
+Your payment has been processed successfully
+Your payment information is secure and encrypted
+Your payment is being verified. You will receive an email confirmation shortly.
+Your payment was cancelled. No charges were made.
+Your PayPal payment is being processed. You will receive an email confirmation once the payment is verified.
+Your subscription
+Your subscription is now active
+your@email.com
+Youtube

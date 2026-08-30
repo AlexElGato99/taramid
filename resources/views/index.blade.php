@@ -1,0 +1,16 @@
+@extends('layouts.app')
+@section('content')
+    @include('sections.nav')
+    <main>
+        @include('sections.hero')
+        @include('sections.marquee')
+        @include('sections.about')
+        @include('sections.products')
+        @include('sections.process')
+        @include('sections.certifications')
+        @include('sections.faq')
+        @include('sections.gallery')
+        @include('sections.contact')
+    </main>
+    @include('sections.footer')
+@endsection

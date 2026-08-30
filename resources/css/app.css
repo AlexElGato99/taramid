@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* Global File Input Styling */
+    input[type="file"] {
+        display: block;
+        width: 100%;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: rgb(var(--color-gray-900));
+        border-width: 1px;
+        border-color: rgb(var(--color-gray-300));
+        border-radius: 0.5rem;
+        cursor: pointer;
+        background-color: rgb(255 255 255);
+        transition-property: color, background-color, border-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+    
+    input[type="file"]:focus {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+    }
+    
+    :is(.dark input[type="file"]) {
+        color: rgb(var(--color-gray-400));
+        border-color: rgb(var(--color-gray-700));
+        background-color: rgb(var(--color-gray-800));
+    }
+    
+    input[type="file"]::file-selector-button {
+        margin-right: 1rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-width: 0;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        background-color: rgb(var(--color-primary-500));
+        color: rgb(255 255 255);
+        cursor: pointer;
+        transition-property: color, background-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+    
+    input[type="file"]:hover::file-selector-button {
+        background-color: rgb(var(--color-primary-600));
+    }
+    
+    :not(.dark) input[type="file"]:hover::file-selector-button {
+        color: rgb(var(--color-gray-900));
+    }
+    
+    input[type="file"]::-webkit-file-upload-button {
+        margin-right: 1rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-width: 0;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        background-color: rgb(var(--color-primary-500));
+        color: rgb(255 255 255);
+        cursor: pointer;
+        transition-property: color, background-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+    
+    input[type="file"]:hover::-webkit-file-upload-button {
+        background-color: rgb(var(--color-primary-600));
+    }
+    
+    :not(.dark) input[type="file"]:hover::-webkit-file-upload-button {
+        color: rgb(var(--color-gray-900));
+    }
+    
+    input[type="file"]::-ms-browse {
+        margin-right: 1rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-width: 0;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        background-color: rgb(var(--color-primary-500));
+        color: rgb(255 255 255);
+        cursor: pointer;
+        transition-property: color, background-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+    
+    input[type="file"]:hover::-ms-browse {
+        background-color: rgb(var(--color-primary-600));
+    }
+    
+    :not(.dark) input[type="file"]:hover::-ms-browse {
+        color: rgb(var(--color-gray-900));
+    }
+}
+
+@layer utilities {
+    /* Hero Slider Dynamic Zoom Effects */
+    .hero-zoom-zoom-in {
+        animation: kenBurnsZoomIn 10s ease-out forwards;
+        transform-origin: center center;
+    }
+    
+    .hero-zoom-zoom-out {
+        animation: kenBurnsZoomOut 10s ease-out forwards;
+        transform-origin: center center;
+    }
+    
+    @keyframes kenBurnsZoomIn {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.2);
+        }
+    }
+    
+    @keyframes kenBurnsZoomOut {
+        0% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    /* Reset animation for non-active slides */
+    .swiper-slide:not(.swiper-slide-active) .hero-zoom-zoom-in {
+        animation: none;
+        transform: scale(1);
+    }
+    
+    .swiper-slide:not(.swiper-slide-active) .hero-zoom-zoom-out {
+        animation: none;
+        transform: scale(1);
+    }
+    
+    /* Trigger animation when slide becomes active */
+    .swiper-slide-active .hero-zoom-zoom-in {
+        animation: kenBurnsZoomIn 10s ease-out forwards;
+    }
+    
+    .swiper-slide-active .hero-zoom-zoom-out {
+        animation: kenBurnsZoomOut 10s ease-out forwards;
+    }
+    
+    /* Smooth overflow handling for zoom effects */
+    .swiper-slide .lg\:aspect-slide {
+        overflow: hidden;
+    }
+}
