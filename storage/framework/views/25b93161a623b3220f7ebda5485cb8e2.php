@@ -1,0 +1,2 @@
+<meta name="theme-color" content="<?php echo e(setting('theme_color', '#ffffff')); ?>">
+<?php /**PATH D:\Dev_Projects\Laravel_Projects\taramid\projectfiles\allfilesbackupstaramid\resources\views/partials/theme-colors.blade.php ENDPATH**/ ?>
