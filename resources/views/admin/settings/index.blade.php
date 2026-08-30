@@ -1,9 +1,15 @@
 @extends('layouts.admin')
 @section('content')
     <div class="max-w-7xl mx-auto w-full px-4">
+        @if($activeTab === 'seo')
+            <x-admin.lang-select section="seo"
+                                 :note="__('Search engines index each language separately. Pick a language to give it its own title, description and social preview.')"/>
+        @endif
+
         <form method="post" action="{{ route('admin.settings.update') }}" enctype="multipart/form-data">
             @csrf
             <input type="hidden" name="_tab" value="{{ $activeTab }}">
+            <input type="hidden" name="lang" value="{{ $activeTab === 'seo' ? admin_locale() : base_locale() }}">
             <div
                 class="border-b pb-3 border-gray-100 dark:border-gray-800">
                 <ul class="flex gap-x-4 whitespace-nowrap overflow-x-auto sm:overflow-x-visible sm:p-2 lg:p-0">

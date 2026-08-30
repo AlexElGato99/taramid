@@ -299,12 +299,32 @@ class SettingsController extends Controller
                 }
             }
             
+            // Tabs listed in config/translatable.php store their prose per
+            // language: the chosen language gets its own copy, while shared
+            // values (API keys, schema.org vocabulary) are only writable from
+            // the default language so a translation pass cannot clear them.
+            $translatableFields = config('translatable.sections.' . $activeTab, []);
+            $sharedFields = config('translatable.shared.' . $activeTab, []);
+            $contentLocale = admin_locale();
+
             foreach ($save_data as $item) {
                 if ($item === 'paygate_providers') continue;
+
+                if (in_array($item, $translatableFields, true)) {
+                    update_settings_for($item, $request->$item, $contentLocale);
+                    continue;
+                }
+
+                if ($contentLocale !== base_locale()
+                    && ($sharedFields || $translatableFields)
+                    && in_array($item, $sharedFields, true)) {
+                    continue;
+                }
+
                 update_settings($item, $request->$item);
             }
 
-            if ($activeTab === 'seo') {
+            if ($activeTab === 'seo' && $contentLocale === base_locale()) {
                 if ($request->hasFile('og_image')) {
                     $ogPath = public_path('storage/uploads/seo/');
                     if (!file_exists($ogPath)) {

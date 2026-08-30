@@ -94,6 +94,11 @@ trait HasTranslations
                 continue;
             }
 
+            // Structured fields (JSON columns) are stored serialised.
+            if (is_array($value)) {
+                $value = json_encode(array_values($value), JSON_UNESCAPED_UNICODE);
+            }
+
             $this->translations()->updateOrCreate(
                 ['locale' => $locale, 'field' => $field],
                 ['value' => $value]

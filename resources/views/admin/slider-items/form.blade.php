@@ -35,7 +35,7 @@
                         <div class="lg:col-span-8">
                             <x-form.label for="text" :value="__('Text')"/>
                             <x-form.input id="text" name="text" type="text" class="mt-1 block w-full"
-                                          :value="old('text', model_value($listing ?? null, 'text', ''))" {{ admin_locale() === base_locale() ? 'required' : '' }} placeholder="{{ model_placeholder($listing ?? null, 'text', __('e.g. Certified Organic Morocco')) }}"/>
+                                          :value="old('text', model_value($listing ?? null, 'text', ''))" :required="admin_locale() === base_locale()" placeholder="{{ model_placeholder($listing ?? null, 'text', __('e.g. Certified Organic Morocco')) }}"/>
                             <x-form.error class="mt-2" :messages="$errors->get('text')"/>
                         </div>
                         <div class="lg:col-span-4">

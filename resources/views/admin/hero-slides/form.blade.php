@@ -41,13 +41,13 @@
                         <div>
                             <x-form.label for="heading_line1" :value="__('Heading Line 1')"/>
                             <x-form.input id="heading_line1" name="heading_line1" type="text" class="mt-1 block w-full"
-                                          :value="old('heading_line1', model_value($listing ?? null, 'heading_line1', ''))" {{ admin_locale() === base_locale() ? 'required' : '' }} placeholder="{{ model_placeholder($listing ?? null, 'heading_line1', __('e.g. The Pure Essence')) }}"/>
+                                          :value="old('heading_line1', model_value($listing ?? null, 'heading_line1', ''))" :required="admin_locale() === base_locale()" placeholder="{{ model_placeholder($listing ?? null, 'heading_line1', __('e.g. The Pure Essence')) }}"/>
                             <x-form.error class="mt-2" :messages="$errors->get('heading_line1')"/>
                         </div>
                         <div>
                             <x-form.label for="heading_line2" :value="__('Heading Line 2 (Highlighted)')"/>
                             <x-form.input id="heading_line2" name="heading_line2" type="text" class="mt-1 block w-full"
-                                          :value="old('heading_line2', model_value($listing ?? null, 'heading_line2', ''))" {{ admin_locale() === base_locale() ? 'required' : '' }} placeholder="{{ model_placeholder($listing ?? null, 'heading_line2', __('e.g. of Morocco')) }}"/>
+                                          :value="old('heading_line2', model_value($listing ?? null, 'heading_line2', ''))" :required="admin_locale() === base_locale()" placeholder="{{ model_placeholder($listing ?? null, 'heading_line2', __('e.g. of Morocco')) }}"/>
                             <x-form.error class="mt-2" :messages="$errors->get('heading_line2')"/>
                         </div>
                     </div>

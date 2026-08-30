@@ -6,9 +6,9 @@
 <section id="gallery" class="py-24 lg:py-32 bg-surface overflow-hidden">
     <div class="max-w-6xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16 reveal">
-            <div class="badge mx-auto mb-6"><?php echo e(setting('gallery_badge', 'Gallery')); ?></div>
+            <div class="badge mx-auto mb-6"><?php echo e(setting('gallery_badge', __('Gallery'))); ?></div>
             <h2 class="font-display text-heading text-ink leading-tight mb-5">
-                <?php echo e(setting('gallery_heading', 'Behind the scenes of our work')); ?>
+                <?php echo e(setting('gallery_heading', __('Behind the scenes of our work'))); ?>
 
             </h2>
             <?php if(setting('gallery_description')): ?>

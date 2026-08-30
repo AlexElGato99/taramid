@@ -62,14 +62,16 @@
         @endunless
     </div>
 
-    @unless($isBase)
-        @once
-            @push('javascript')
-                <script>
-                    // During a translation pass, lock every field that is not
+    @once
+        @push('javascript')
+            <script>
+                (function () {
+                    var RTL_LOCALES = @json(config('languages.rtl', []));
+
+                    // While translating, lock every field that is not
                     // language-specific so it is visibly read-only and is not
                     // submitted -- the server ignores it either way.
-                    document.addEventListener('DOMContentLoaded', function () {
+                    function lockSharedFields() {
                         document.querySelectorAll('[data-lang-panel][data-is-base="0"]').forEach(function (panel) {
                             var translatable = JSON.parse(panel.dataset.translatable || '[]');
                             if (!translatable.length) return;
@@ -86,14 +88,62 @@
                                 if (!name || always.indexOf(name) !== -1) return;
                                 if (translatable.indexOf(name) !== -1) return;
 
+                                // Structured fields arrive as name="field[0][part]".
+                                // The parts that must stay locked are disabled in
+                                // the form itself, so leave the rest editable.
+                                var root = name.indexOf('[') === -1 ? name : name.slice(0, name.indexOf('['));
+                                if (translatable.indexOf(root) !== -1) return;
+
                                 field.disabled = true;
                                 field.classList.add('opacity-50', 'cursor-not-allowed');
                                 field.title = @json(__('Managed in the default language'));
                             });
                         });
-                    });
-                </script>
-            @endpush
-        @endonce
-    @endunless
+                    }
+
+                    // Typing Arabic into a left-to-right box is painful, so when
+                    // the content language reads right-to-left the editable text
+                    // controls flip with it. The admin interface itself stays in
+                    // its own language and direction.
+                    //
+                    // Every content form carries a hidden "lang" input, which is
+                    // what identifies the form and the language being edited --
+                    // so this works per form, including the gallery page where
+                    // each caption is its own form.
+                    function applyContentDirection() {
+                        document.querySelectorAll('form input[type="hidden"][name="lang"]').forEach(function (marker) {
+                            if (RTL_LOCALES.indexOf(marker.value) === -1) return;
+
+                            var form = marker.form || marker.closest('form');
+                            if (!form) return;
+
+                            form.setAttribute('data-content-rtl', '');
+
+                            form.querySelectorAll('input[type="text"], input:not([type]), textarea')
+                                .forEach(function (field) {
+                                    // Locked fields belong to the default language,
+                                    // and URLs read wrong reversed.
+                                    if (field.disabled || field.readOnly) return;
+                                    field.setAttribute('dir', 'rtl');
+                                    field.classList.add('text-right');
+                                });
+                        });
+                    }
+
+                    function run() {
+                        lockSharedFields();
+                        applyContentDirection();
+                    }
+
+                    // The stack renders at the end of <body>, so the form is
+                    // already parsed and this avoids a flash of the wrong side.
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', run);
+                    } else {
+                        run();
+                    }
+                })();
+            </script>
+        @endpush
+    @endonce
 @endif

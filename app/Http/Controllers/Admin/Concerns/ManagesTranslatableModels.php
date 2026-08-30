@@ -35,9 +35,15 @@ trait ManagesTranslatableModels
         $locale = $this->editingLocale($request);
         $fields = $model->translatableFields();
 
-        $request->validate(
-            array_fill_keys($fields, 'nullable|string')
-        );
+        // Most translatable fields are plain text; a few (product action
+        // buttons) are structured, so the rule follows what was submitted.
+        $rules = [];
+        foreach ($fields as $field) {
+            $rules[$field] = is_array($request->input($field)) ? 'nullable|array' : 'nullable|string';
+        }
+        $rules['action_buttons.*.text'] = 'nullable|string|max:255';
+
+        $request->validate($rules);
 
         $model->saveTranslations($request->only($fields), $locale);
 

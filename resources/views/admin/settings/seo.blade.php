@@ -7,8 +7,8 @@
             <div>
                 <x-form.label for="seo_title" :value="__('Meta Title')"/>
                 <x-form.input id="seo_title" name="seo_title" type="text" class="mt-1 block w-full"
-                              :value="old('seo_title', config('settings.seo_title', ''))"
-                              placeholder="{{__('e.g. Taramide Cosmetics - Natural Moroccan Beauty Products')}}"/>
+                              :value="old('seo_title', admin_value('seo_title', ''))"
+                              placeholder="{{ admin_placeholder('seo_title', __('e.g. Taramide Cosmetics - Natural Moroccan Beauty Products')) }}"/>
                 <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">{{__('50-60 characters recommended. Appears in browser tab and search results.')}}</p>
             </div>
 
@@ -16,15 +16,15 @@
                 <x-form.label for="seo_description" :value="__('Meta Description')"/>
                 <textarea id="seo_description" name="seo_description" rows="3"
                           class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 text-sm"
-                          placeholder="{{__('Brief description of your website for search results...')}}">{{ old('seo_description', config('settings.seo_description', '')) }}</textarea>
+                          placeholder="{{ admin_placeholder('seo_description', __('Brief description of your website for search results...')) }}">{{ old('seo_description', admin_value('seo_description', '')) }}</textarea>
                 <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">{{__('150-160 characters recommended. Shown below your title in search results.')}}</p>
             </div>
 
             <div>
                 <x-form.label for="seo_keywords" :value="__('Meta Keywords')"/>
                 <x-form.input id="seo_keywords" name="seo_keywords" type="text" class="mt-1 block w-full"
-                              :value="old('seo_keywords', config('settings.seo_keywords', ''))"
-                              placeholder="{{__('e.g. organic cosmetics, argan oil, moroccan beauty, natural skincare')}}"/>
+                              :value="old('seo_keywords', admin_value('seo_keywords', ''))"
+                              placeholder="{{ admin_placeholder('seo_keywords', __('e.g. organic cosmetics, argan oil, moroccan beauty, natural skincare')) }}"/>
                 <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">{{__('Comma-separated keywords related to your business.')}}</p>
             </div>
         </div>
@@ -39,8 +39,8 @@
             <div>
                 <x-form.label for="og_title" :value="__('OG Title')"/>
                 <x-form.input id="og_title" name="og_title" type="text" class="mt-1 block w-full"
-                              :value="old('og_title', config('settings.og_title', ''))"
-                              placeholder="{{__('Leave empty to use Meta Title')}}"/>
+                              :value="old('og_title', admin_value('og_title', ''))"
+                              placeholder="{{ admin_placeholder('og_title', __('Leave empty to use Meta Title')) }}"/>
                 <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">{{__('Title shown when sharing on Facebook, LinkedIn, etc.')}}</p>
             </div>
 
@@ -48,7 +48,7 @@
                 <x-form.label for="og_description" :value="__('OG Description')"/>
                 <textarea id="og_description" name="og_description" rows="2"
                           class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 text-sm"
-                          placeholder="{{__('Leave empty to use Meta Description')}}">{{ old('og_description', config('settings.og_description', '')) }}</textarea>
+                          placeholder="{{ admin_placeholder('og_description', __('Leave empty to use Meta Description')) }}">{{ old('og_description', admin_value('og_description', '')) }}</textarea>
             </div>
 
             <div>
@@ -108,8 +108,8 @@
             <div>
                 <x-form.label for="schema_address" :value="__('Address')"/>
                 <x-form.input id="schema_address" name="schema_address" type="text" class="mt-1 block w-full"
-                              :value="old('schema_address', config('settings.schema_address', ''))"
-                              placeholder="{{__('Street, City, Country')}}"/>
+                              :value="old('schema_address', admin_value('schema_address', ''))"
+                              placeholder="{{ admin_placeholder('schema_address', __('Street, City, Country')) }}"/>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">

@@ -4,7 +4,12 @@
         {
             "name": "taramide",
             "runtimeExecutable": "C:/xampp/php/php.exe",
-            "runtimeArgs": ["artisan", "serve", "--host=127.0.0.1", "--port=8123"],
+            "runtimeArgs": [
+                "artisan",
+                "serve",
+                "--host=127.0.0.1",
+                "--port=8123"
+            ],
             "port": 8123
         }
     ]

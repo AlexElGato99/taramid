@@ -6,9 +6,9 @@
 <section id="faq" class="py-24 lg:py-32 bg-white">
     <div class="max-w-3xl mx-auto px-6 lg:px-8">
         <div class="text-center mb-16 reveal">
-            <div class="badge mx-auto mb-6">{{ setting('faq_badge', 'FAQ') }}</div>
+            <div class="badge mx-auto mb-6">{{ setting('faq_badge', __('FAQ')) }}</div>
             <h2 class="font-display text-heading text-ink leading-tight mb-5">
-                {{ setting('faq_heading', 'Frequently asked questions') }}
+                {{ setting('faq_heading', __('Frequently asked questions')) }}
             </h2>
             @if(setting('faq_description'))
                 <p class="text-base text-ash leading-relaxed">{{ setting('faq_description') }}</p>

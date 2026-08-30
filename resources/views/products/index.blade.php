@@ -7,12 +7,12 @@
             <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
                 <div class="text-center max-w-xl mx-auto mb-16">
-                    <div class="badge mx-auto mb-6 reveal">{{ setting('products_badge', 'Our Range') }}</div>
+                    <div class="badge mx-auto mb-6 reveal">{{ setting('products_badge', __('Our Range')) }}</div>
                     <h1 class="font-display text-4xl lg:text-5xl text-ink leading-tight reveal reveal-delay-1">
-                        {{ setting('products_heading_line1', 'Our Products') }}
+                        {{ setting('products_heading_line1', __('Our Products')) }}
                     </h1>
                     <p class="text-base text-ash leading-relaxed mt-4 reveal reveal-delay-2">
-                        {{ setting('products_description', 'All our products are sourced from plants harvested within 100 km of Midelt.') }}
+                        {{ setting('products_description', __('All our products are sourced from plants harvested within 100 km of Midelt.')) }}
                     </p>
                 </div>
 

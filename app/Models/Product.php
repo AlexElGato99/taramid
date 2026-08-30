@@ -26,6 +26,7 @@ class Product extends Model
         'tag1',
         'tag2',
         'link_text',
+        'action_buttons',
     ];
 
 
@@ -84,5 +85,39 @@ class Product extends Model
     public function scopeOrdered($query)
     {
         return $query->orderBy('sort_order');
+    }
+
+    /**
+     * Action buttons for the active locale.
+     *
+     * Only the label is translated: the icon and the link target (email
+     * address, WhatsApp number, URL) always come from the default language,
+     * so translating a button can never break where it points.
+     */
+    public function actionButtons(?string $locale = null): array
+    {
+        $baseButtons = $this->action_buttons ?? [];
+
+        $translated = $this->t('action_buttons', $locale);
+        if (is_string($translated)) {
+            $translated = json_decode($translated, true);
+        }
+        if (!is_array($translated) || !$translated) {
+            $translated = $baseButtons;
+        }
+
+        $buttons = [];
+        foreach (array_values($translated) as $i => $button) {
+            $base = $baseButtons[$i] ?? [];
+            $buttons[] = [
+                'icon' => $base['icon'] ?? ($button['icon'] ?? 'link'),
+                'value' => $base['value'] ?? ($button['value'] ?? ''),
+                'text' => trim((string) ($button['text'] ?? '')) !== ''
+                    ? $button['text']
+                    : ($base['text'] ?? ''),
+            ];
+        }
+
+        return $buttons;
     }
 }

@@ -1,15 +1,15 @@
 @php
-    $contactBadge = setting('contact_badge', 'Contact Us');
-    $contactHeading1 = setting('contact_heading_line1', "Let's talk about");
-    $contactHeading2 = setting('contact_heading_line2', 'your project');
-    $contactDesc = setting('contact_description', 'Distributor, professional or individual — our team is at your disposal for any order or partnership.');
+    $contactBadge = setting('contact_badge', __('Contact Us'));
+    $contactHeading1 = setting('contact_heading_line1', __("Let's talk about"));
+    $contactHeading2 = setting('contact_heading_line2', __('your project'));
+    $contactDesc = setting('contact_description', __('Distributor, professional or individual — our team is at your disposal for any order or partnership.'));
     $contactPhone = setting('contact_phone', '+212 661 436 621');
     $contactEmail = setting('contact_email', 'ste.taramide@gmail.com');
-    $contactAddress = setting('contact_address', "Ksar Ousroutou, Sidi Aayad\nEr-rich, Midelt, Maroc");
-    $contactManager = setting('contact_manager', 'Ayoub Sabbane');
-    $contactFormTitle = setting('contact_form_title', 'Send a message');
-    $contactButtonText = setting('contact_button_text', 'Send Message');
-    $contactSuccessMsg = setting('contact_success_message', 'Your message has been sent successfully. We will get back to you as soon as possible.');
+    $contactAddress = setting('contact_address', __("Ksar Ousroutou, Sidi Aayad\nEr-rich, Midelt, Maroc"));
+    $contactManager = setting('contact_manager', __('Ayoub Sabbane'));
+    $contactFormTitle = setting('contact_form_title', __('Send a message'));
+    $contactButtonText = setting('contact_button_text', __('Send Message'));
+    $contactSuccessMsg = setting('contact_success_message', __('Your message has been sent successfully. We will get back to you as soon as possible.'));
 @endphp
 
 <section id="contact" class="py-24 lg:py-32 relative overflow-hidden" style="background-color: var(--btn-color, #2B5F3F);">
@@ -31,7 +31,7 @@
                             <svg class="w-4.5 h-4.5 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
                         </div>
                         <div>
-                            <div class="text-[11px] text-white/30 mb-0.5">Phone</div>
+                            <div class="text-[11px] text-white/30 mb-0.5">{{ __('Phone') }}</div>
                             @foreach(array_map('trim', explode(',', $contactPhone)) as $phone)
                                 <a href="tel:{{ preg_replace('/\s+/', '', $phone) }}" class="text-sm text-white hover:text-accent transition-colors block">{{ $phone }}</a>
                             @endforeach
@@ -42,7 +42,7 @@
                             <svg class="w-4.5 h-4.5 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
                         </div>
                         <div>
-                            <div class="text-[11px] text-white/30 mb-0.5">Email</div>
+                            <div class="text-[11px] text-white/30 mb-0.5">{{ __('Email') }}</div>
                             @foreach(array_map('trim', explode(',', $contactEmail)) as $email)
                                 <a href="mailto:{{ $email }}" class="text-sm text-white hover:text-accent transition-colors block">{{ $email }}</a>
                             @endforeach
@@ -53,7 +53,7 @@
                             <svg class="w-4.5 h-4.5 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
                         </div>
                         <div>
-                            <div class="text-[11px] text-white/30 mb-0.5">Address</div>
+                            <div class="text-[11px] text-white/30 mb-0.5">{{ __('Address') }}</div>
                             <p class="text-sm text-white leading-relaxed">{!! nl2br(e($contactAddress)) !!}</p>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                             <svg class="w-4.5 h-4.5 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
                         </div>
                         <div>
-                            <div class="text-[11px] text-white/30 mb-0.5">Manager</div>
+                            <div class="text-[11px] text-white/30 mb-0.5">{{ __('Manager') }}</div>
                             <p class="text-sm text-white">{{ $contactManager }}</p>
                         </div>
                     </div>
@@ -83,28 +83,28 @@
                     <div class="space-y-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-[11px] text-white/40 mb-1.5">First Name</label>
-                                <input type="text" x-model="form.first_name" required placeholder="John" class="inp-dark">
+                                <label class="block text-[11px] text-white/40 mb-1.5">{{ __('First Name') }}</label>
+                                <input type="text" x-model="form.first_name" required placeholder="{{ __('John') }}" class="inp-dark">
                             </div>
                             <div>
-                                <label class="block text-[11px] text-white/40 mb-1.5">Last Name</label>
-                                <input type="text" x-model="form.last_name" required placeholder="Smith" class="inp-dark">
+                                <label class="block text-[11px] text-white/40 mb-1.5">{{ __('Last Name') }}</label>
+                                <input type="text" x-model="form.last_name" required placeholder="{{ __('Smith') }}" class="inp-dark">
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-[11px] text-white/40 mb-1.5">Email</label>
-                            <input type="email" x-model="form.email" required placeholder="you@example.com" class="inp-dark">
+                            <label class="block text-[11px] text-white/40 mb-1.5">{{ __('Email') }}</label>
+                            <input type="email" x-model="form.email" required placeholder="{{ __('you@example.com') }}" class="inp-dark">
                         </div>
 
                         <div>
-                            <label class="block text-[11px] text-white/40 mb-1.5">Message</label>
-                            <textarea rows="4" x-model="form.message" required placeholder="Describe your project or needs..." class="inp-dark resize-none"></textarea>
+                            <label class="block text-[11px] text-white/40 mb-1.5">{{ __('Message') }}</label>
+                            <textarea rows="4" x-model="form.message" required placeholder="{{ __('Describe your project or needs...') }}" class="inp-dark resize-none"></textarea>
                         </div>
 
                         <button type="submit" :disabled="loading" class="w-full bg-accent text-white text-sm font-medium py-3.5 rounded-xl hover:bg-accent-light transition-all duration-300 flex items-center justify-center gap-2.5 group disabled:opacity-50">
                             <span x-show="!loading">{{ $contactButtonText }}</span>
-                            <span x-show="loading" x-cloak>Sending...</span>
+                            <span x-show="loading" x-cloak>{{ __('Sending...') }}</span>
                             <svg x-show="!loading" class="w-4 h-4 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                         </button>
                     </div>
@@ -145,10 +145,10 @@ function contactForm() {
                     this.success = true;
                     this.form = { first_name: '', last_name: '', email: '', type: '', message: '' };
                 } else {
-                    this.error = data.message || 'Une erreur est survenue.';
+                    this.error = data.message || @json(__('Something went wrong.'));
                 }
             } catch (e) {
-                this.error = 'Une erreur est survenue. Veuillez reessayer.';
+                this.error = @json(__('Something went wrong. Please try again.'));
             }
             this.loading = false;
         }

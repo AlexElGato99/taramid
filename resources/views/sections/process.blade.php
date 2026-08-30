@@ -10,9 +10,9 @@
 <section id="process" class="py-24 lg:py-32 bg-white">
     <div class="max-w-6xl mx-auto px-6 lg:px-8">
         <div class="text-center max-w-xl mx-auto mb-16 reveal">
-            <div class="badge mx-auto mb-6">{{ setting('process_badge', 'Our Process') }}</div>
+            <div class="badge mx-auto mb-6">{{ setting('process_badge', __('Our Process')) }}</div>
             <h2 class="font-display text-heading text-ink leading-tight">
-                {{ setting('process_heading_line1', 'From plant to bottle,') }}<br>{{ setting('process_heading_line2', 'a unique expertise') }}
+                {{ setting('process_heading_line1', __('From plant to bottle,')) }}<br>{{ setting('process_heading_line2', __('a unique expertise')) }}
             </h2>
         </div>
 

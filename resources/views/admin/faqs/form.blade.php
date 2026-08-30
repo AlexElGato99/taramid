@@ -26,7 +26,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-6 gap-y-4">
                         <div class="lg:col-span-8">
                             <x-form.label for="question" :value="__('Question')"/>
-                            <x-form.input id="question" name="question" type="text" class="mt-1 block w-full" {{ admin_locale() === base_locale() ? 'required' : '' }}
+                            <x-form.input id="question" name="question" type="text" class="mt-1 block w-full" :required="admin_locale() === base_locale()"
                                           :value="old('question', model_value($listing ?? null, 'question', ''))" placeholder="{{ model_placeholder($listing ?? null, 'question', __('e.g. How do I place an order?')) }}"/>
                         </div>
                         <div class="lg:col-span-4">

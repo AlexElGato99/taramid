@@ -35,7 +35,7 @@
                         <div class="lg:col-span-12">
                             <x-form.label for="title" :value="__('Title')"/>
                             <x-form.input id="title" name="title" type="text" class="mt-1 block w-full"
-                                          :value="old('title', model_value($listing ?? null, 'title', ''))" {{ admin_locale() === base_locale() ? 'required' : '' }} placeholder="{{ model_placeholder($listing ?? null, 'title', __('e.g. Rosemary Essential Oil')) }}"/>
+                                          :value="old('title', model_value($listing ?? null, 'title', ''))" :required="admin_locale() === base_locale()" placeholder="{{ model_placeholder($listing ?? null, 'title', __('e.g. Rosemary Essential Oil')) }}"/>
                             <x-form.error class="mt-2" :messages="$errors->get('title')"/>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                     </div>
 
                     <div x-data="{
-                        buttons: {{ json_encode(old('action_buttons', $listing->action_buttons ?? [
+                        buttons: {{ json_encode(old('action_buttons', isset($listing) ? $listing->actionButtons(admin_locale()) : [
                             ['icon' => 'email', 'text' => 'Order Via Email', 'value' => ''],
                             ['icon' => 'whatsapp', 'text' => 'Order Via WhatsApp', 'value' => '']
                         ])) }}
@@ -125,6 +125,7 @@
                                     <div class="lg:col-span-3">
                                         <label class="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">{{__('Icon')}}</label>
                                         <select x-model="btn.icon"
+                                                @disabled(admin_locale() !== base_locale())
                                                 :name="'action_buttons[' + index + '][icon]'"
                                                 class="block w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 rounded-md shadow-sm text-sm">
                                             <option value="email">{{__('Email')}}</option>
@@ -144,6 +145,7 @@
                                     <div class="lg:col-span-5">
                                         <label class="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">{{__('Value')}}</label>
                                         <input type="text" x-model="btn.value"
+                                               @disabled(admin_locale() !== base_locale())
                                                :name="'action_buttons[' + index + '][value]'"
                                                class="block w-full border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 rounded-md shadow-sm text-sm"
                                                :placeholder="btn.icon === 'whatsapp' ? '{{__('WhatsApp number e.g. 212600000000')}}' : btn.icon === 'phone' ? '{{__('Phone number')}}' : btn.icon === 'email' ? '{{__('Email or leave empty for contact page')}}' : '{{__('URL')}}'">

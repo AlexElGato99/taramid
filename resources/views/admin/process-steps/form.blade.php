@@ -27,7 +27,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-6 gap-y-4">
                         <div class="lg:col-span-8">
                             <x-form.label for="title" :value="__('Title')"/>
-                            <x-form.input id="title" name="title" type="text" class="mt-1 block w-full" {{ admin_locale() === base_locale() ? 'required' : '' }}
+                            <x-form.input id="title" name="title" type="text" class="mt-1 block w-full" :required="admin_locale() === base_locale()"
                                           :value="old('title', model_value($listing ?? null, 'title', ''))" placeholder="{{ model_placeholder($listing ?? null, 'title', __('e.g. Cultivation')) }}"/>
                         </div>
                         <div class="lg:col-span-4">

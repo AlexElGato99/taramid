@@ -9,12 +9,12 @@
 <section id="certs" class="py-24 lg:py-32 bg-surface">
     <div class="max-w-6xl mx-auto px-6 lg:px-8">
         <div class="text-center max-w-xl mx-auto mb-16 reveal">
-            <div class="badge mx-auto mb-6">{{ setting('cert_badge', 'Quality Guarantees') }}</div>
+            <div class="badge mx-auto mb-6">{{ setting('cert_badge', __('Quality Guarantees')) }}</div>
             <h2 class="font-display text-heading text-ink leading-tight mb-5">
-                {{ setting('cert_heading_line1', 'Certifications that') }}<br>{{ setting('cert_heading_line2', 'prove our commitment') }}
+                {{ setting('cert_heading_line1', __('Certifications that')) }}<br>{{ setting('cert_heading_line2', __('prove our commitment')) }}
             </h2>
             <p class="text-base text-ash leading-relaxed">
-                {{ setting('cert_description', 'Our products undergo the most rigorous controls, validated by independent national and international organizations.') }}
+                {{ setting('cert_description', __('Our products undergo the most rigorous controls, validated by independent national and international organizations.')) }}
             </p>
         </div>
 

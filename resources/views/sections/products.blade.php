@@ -5,12 +5,12 @@
     <div class="max-w-6xl mx-auto px-6 lg:px-8">
 
         <div class="text-center max-w-xl mx-auto mb-16">
-            <div class="badge mx-auto mb-6 reveal">{{ setting('products_badge', 'Our Range') }}</div>
+            <div class="badge mx-auto mb-6 reveal">{{ setting('products_badge', __('Our Range')) }}</div>
             <h2 class="font-display text-heading text-ink leading-tight reveal reveal-delay-1">
-                {{ setting('products_heading_line1', 'Pure extracts') }}<br>{{ setting('products_heading_line2', 'from nature') }}
+                {{ setting('products_heading_line1', __('Pure extracts')) }}<br>{{ setting('products_heading_line2', __('from nature')) }}
             </h2>
             <p class="text-base text-ash leading-relaxed mt-4 reveal reveal-delay-2">
-                {{ setting('products_description', 'All our products are sourced from plants harvested within 100 km of Midelt.') }}
+                {{ setting('products_description', __('All our products are sourced from plants harvested within 100 km of Midelt.')) }}
             </p>
         </div>
 

@@ -91,6 +91,17 @@ return [
             'footer_columns',
         ],
 
+        // Search engines index each language separately, so the page title,
+        // meta description, keywords and social-card copy are per language.
+        'seo' => [
+            'seo_title',
+            'seo_description',
+            'seo_keywords',
+            'og_title',
+            'og_description',
+            'schema_address',
+        ],
+
     ],
 
     /*
@@ -120,6 +131,20 @@ return [
 
         'footer-section' => [
             'footer_whatsapp',
+        ],
+
+        // schema_business_type holds a schema.org vocabulary term and
+        // schema_business_name is the brand: translating either would break
+        // the structured data rather than localise it.
+        'seo' => [
+            'schema_business_name',
+            'schema_business_type',
+            'schema_email',
+            'schema_phone',
+            'schema_founding_date',
+            'schema_price_range',
+            'google_verification',
+            'google_analytics',
         ],
 
     ],
