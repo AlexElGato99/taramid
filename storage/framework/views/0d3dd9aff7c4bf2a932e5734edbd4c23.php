@@ -62,7 +62,7 @@
                                                     </div>
                                                 <?php endif; ?>
                                                 <?php if($product->t('badge')): ?>
-                                                    <span class="absolute top-3 left-3 text-xs font-medium bg-white/90 backdrop-blur-sm text-ink px-3 py-1 rounded-full"><?php echo e($product->t('badge')); ?></span>
+                                                    <span class="absolute top-3 start-3 text-xs font-medium bg-white/90 backdrop-blur-sm text-ink px-3 py-1 rounded-full"><?php echo e($product->t('badge')); ?></span>
                                                 <?php endif; ?>
                                             </div>
                                             <div class="p-5 flex flex-col flex-1">

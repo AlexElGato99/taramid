@@ -40,7 +40,7 @@
                             <div class="mt-2.5 text-xs text-ash"><?php echo e($cert->t('detail_line')); ?></div>
                         <?php endif; ?>
                         <?php if($cert->t('status_label')): ?>
-                            <span class="inline-block mt-3 md:mt-0 md:float-end text-[11px] font-medium text-leaf bg-leaf/10 px-2.5 py-0.5 rounded-full"><?php echo e($cert->t('status_label')); ?></span>
+                            <span class="inline-block mt-3 md:mt-0 md:float-right md:rtl:float-left text-[11px] font-medium text-leaf bg-leaf/10 px-2.5 py-0.5 rounded-full"><?php echo e($cert->t('status_label')); ?></span>
                         <?php endif; ?>
                     </div>
                 </div>
